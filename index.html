@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <script src="https://use.fontawesome.com/a852d6f662.js"></script>
+    <title>Restaurant App</title>
+</head>
+
+<body id="body">
+    <section class="grid">
+
+        <section id="table" class="col-sm">
+            <header class="header">Table</header>
+            <input type="text" class="search-bar lg shadow" placeholder="seach by table number" />
+            <div class="tables" id="tables"></div>
+        </section>
+
+        <section id="menu" class="col-lg">
+            <header class="header">Menu</header>
+            <input type="text" class="search-bar sm shadow" placeholder="seach by name or type" />
+            <div class="orders" id="orders"></div>
+        </section>
+
+    </section>
+
+    <section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-heading">Table | Order Details</h3>
+                    <span class="close">&times;</span>
+                </div>
+
+
+                <table class="modal-table">
+                    <thead>
+                        <tr>
+                            <th>S No.</th>
+                            <th>Item Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody class="modal-data"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td colspan="2" class="modal-total"> Total : </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="close-btn-wrapper">
+                    <button class="close-btn">close Session (Generate Bill)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+    <footer>
+        <script src="./js/styles.js"></script>
+        <script type="module" src="./js/fillData.js"></script>
+        <script type="module" src="./js/filter.js"></script>
+        <script type="module" src="./js/modal.js"></script>
+    </footer>
+</body>
+
+</html>
