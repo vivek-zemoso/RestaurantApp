@@ -124,7 +124,6 @@ const clearAndCloseModal = async (e) => {
     await sendRequest(table);
     closeModal();
     window.location.reload();
-    // alert('Thank You for choosing us !!');
 }
 
 const updateDBAndCloseModal = async () => {
